@@ -9,5 +9,6 @@ SUMMARY="Win32 API headers for Cygwin 64bit toolchain"
 HOMEPAGE="http://mingw-w64.sourceforge.net/"
 SRC_URI="mirror://sourceforge/mingw-w64/mingw-w64-v${VERSION}.tar.bz2"
 SRC_DIR="mingw-w64-v${VERSION}/mingw-w64-headers"
+PATCH_URI="3.0.0-cygwin64-intrinsics.patch"
 
 CYGCONF_ARGS="--enable-w32api --includedir=${CROSS_INCLUDEDIR}/w32api"
